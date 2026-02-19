@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Habit Tracker</h1>
+      <div class="week-nav">
+        <button id="prev-week" aria-label="Vorherige Woche">&larr;</button>
+        <span id="week-label"></span>
+        <button id="next-week" aria-label="Nächste Woche">&rarr;</button>
+      </div>
+    </header>
+
+    <section class="add-habit">
+      <input type="text" id="habit-input" placeholder="Neues Habit eingeben..." maxlength="50">
+      <button id="add-btn">Hinzufügen</button>
+    </section>
+
+    <section class="tracker">
+      <div class="tracker-header">
+        <div class="habit-name-col">Habit</div>
+        <div class="days-cols" id="day-headers"></div>
+        <div class="streak-col">Streak</div>
+        <div class="actions-col"></div>
+      </div>
+      <div id="habit-list"></div>
+      <p id="empty-msg" class="empty-msg">Noch keine Habits vorhanden. Füge dein erstes Habit hinzu!</p>
+    </section>
+
+    <footer>
+      <p>Daten werden lokal im Browser gespeichert.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

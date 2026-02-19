@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Habit Tracker
+Comment=Tägliche Gewohnheiten tracken
+Exec=xdg-open %APP_DIR%/index.html
+Icon=%APP_DIR%/icon.svg
+Type=Application
+Categories=Utility;
+Terminal=false
+StartupNotify=true
